@@ -1,0 +1,16 @@
+{
+  "name": "oppai.js",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "oppis's user.js",
+    "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*/files"],
+      "js": [
+              "jquery-3.1.1.min.js",
+              "main.js"
+            ],
+      "run_at": "document_start"
+    }
+  ]
+}
